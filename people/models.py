@@ -9,7 +9,7 @@ class Person(models.Model):
     last_name = models.CharField(max_length=255)
     suffix = models.CharField(max_length=10, blank=True)
     can_drink = models.BooleanField(default=False, editable=False)
-    full_name = models.TextField(blank=True, editable=False)
+    full_name = models.TextField(blank=True)
     
     class Meta:
         verbose_name_plural = "people"
